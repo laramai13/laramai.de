@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Lara Mai Weilemann</title>
+	<link rel="icon" href="bilder/logo_centered.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_cs_projects.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Sometype+Mono&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="bilder/pillars_of_creation.jpg">  
+</head>
+  <header id="menubar">
+	  <a href="home.html" id="logo"></a>
+	<nav>
+	  <ul>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a id="projects" >Projects</a>
+			<div class="project_content">
+				<a href="projects.html">Programming</a>
+				<a href="projects.html">Sewing</a>
+			</div></li>
+		
+		<li><a href="home.html">CONTACT</a></li>
+	  </ul>
+	</nav>
+	</header>
+  <body>
+	<div id="main">
+   
+        <div id="sudoku_app">
+          <div>
+          <h1>Sudoku App</h1> 2020
+          <p>Developed a dedicated Sudoku application using Android Studio 
+            with the focus of replicating the traditional pen-and-paper Sudoku experience.<br><br>
+            This app was created in response to dissatisfaction with existing applications, 
+            which often incorporated distracting features that simplified the problem solving. 
+            The goal was to offer users an authentic and 
+            immersive puzzle-solving experience in a digital format. Unlike many Sudoku apps,
+            this project intentionally avoids automatic highlighting or assistance features, 
+            preserving the purity of the solving process. <br>
+            The application was developed using Android Studio. 
+            The app's functionality and logic were implemented using Java.
+          
+          </p>
+          </div>
+            <img src="bilder/sudoku_app_1.png">
+            <img src="bilder/sudoku_app_3.png">
+           
+            <img src="bilder/sudoku_app5.png">
+        </div>
+        <div id="sudoku_py">
+          <img src="bilder/pygame.png" alt="Sudoku Pygame" height="200px">
+          <div>
+            <h1>Sudoku Pygame</h1> 2019
+            <p>Development of a fully playable Sudoku game using Pygame, integrating a Python 
+              algorithm for generating Sudoku grids based on backtracking principles. <br> <br>
+              This project offers a user-friendly interface allowing players to engage with randomly 
+              generated Sudoku puzzles. A graphical user interface (GUI) built with Pygame provides 
+              an intuitive and visually appealing platform for players to interact with Sudoku puzzles.
+              This project highlights my proficiency in game development, Pygame, and the successful 
+              integration of algorithmic solutions into real-world applications.</p>
+          </div>
+          
+        </div>
+        <div id="sudoku_gen">
+          <div>
+          <h1>Random Sudoku Generator</h1>2019
+          
+          <p>Development of a Python algorithm for generating fully filled Sudoku grids.<br><br> 
+            
+            The project was implemented in Python. The main task was to design an algorithm 
+            that provides both random and complete solutions for Sudoku puzzles. 
+            The use of backtracking ensured that every generated puzzle has a valid solution.
+            Randomness was achieved through random number selection.<br>
+            The finished grids can can serve as a starting point for creating Sudoku challenges.
+            This project highlights my ability to tackle algorithmic challenges and solve complex problems in Python.
+          </p>
+          </div>
+          <img src="bilder/sudoku_generated.png" alt="Sudoku Pygame" height="200px">
+          
+        </div>
+    </div>
+
+
+
+    
+    <script>
+        document.getElementById('projects').addEventListener('mouseover', function() {
+      document.querySelector('.project_content').style.display = 'block';
+    });
+    
+    document.getElementById('projects').addEventListener('mouseout', function() {
+      document.querySelector('.project_content').style.display = 'none';
+    
+    });
+    
+    var projects = document.getElementById('projects');
+    var projectContent = document.querySelector('.project_content');
+    
+    projects.addEventListener('mouseover', function() {
+      projectContent.style.display = 'block';
+    });
+    
+    projects.addEventListener('mouseout', function(event) {
+      if (!projectContent.contains(event.relatedTarget)) {
+        projectContent.style.display = 'none';
+      }
+    });
+    
+    projectContent.addEventListener('mouseover', function() {
+      projectContent.style.display = 'block';
+    });
+    
+    projectContent.addEventListener('mouseout', function(event) {
+      if (!projects.contains(event.relatedTarget)) {
+        projectContent.style.display = 'none';
+      }
+    });
+    
+    
+    
+        </script>	
+  </body>
+</html>

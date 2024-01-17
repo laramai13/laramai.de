@@ -1,0 +1,140 @@
+body{
+	background-color: #FFFCF8;
+	margin: 0;
+    padding: 0;
+	}
+#menubar{
+	width: 100%;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    z-index: 200;
+    
+}
+
+
+#menubar li{
+	display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#menubar ul {
+    margin-top: 20px;
+    list-style: none;
+    word-spacing: 20px;
+    position: relative;
+    }
+
+#menubar a{
+	font-size: 12pt;
+	text-decoration: none;
+    color: #000000;
+    font-family: 'Sometype Mono', sans-serif;
+    transition: 250ms;
+    position: relative;
+    /*font-weight: 200;*/
+   
+}
+
+#menubar a:hover {
+    color: #77689F;
+    
+}
+
+
+
+.project_content{
+   display: none;
+   width: fit-content;
+   padding-right: 5px;
+   position: absolute;
+    /*text-transform: none;*/
+    text-transform: uppercase;
+    background-color: #FFFCF8;
+
+}
+
+#projects:hover + .project_content{
+    display: block;
+    position: absolute;
+}
+
+
+#logo {
+    margin: 4px;
+    margin-left: 20px;
+    float: left;
+    width: 60px;
+    height: 50px;
+    background: url(bilder/logo_schwarz.png) no-repeat center;
+    display: block;
+    background-size: 60px;
+}
+#logo:hover{
+    margin: 4px;
+    margin-left: 20px;
+    float: left;
+    width: 60px;
+    height: 50px;
+    background: url(bilder/logo_blue_lavender.png) no-repeat center;
+    display: block;
+    background-size: 60px;
+}
+#menubar nav {
+    float: right;
+    padding-right: 20px;
+
+}
+
+
+#home{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 400px;
+    position: relative;
+    background: url(bilder/pillars_of_creation.jpg) no-repeat top;
+    background-size: 100% ;
+}
+#name{
+    color:#FFFCF8;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Sometype Mono', sans-serif;
+    font-weight: 50;
+}
+
+#ich{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+}
+
+#to_resume{
+    /*background-color: #9e00cbff;*/
+    background-color: #FFFCF8;
+    height: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+#to_resume a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Sometype Mono', sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px;
+    padding: 10px;
+    transition: 500ms;
+}
+
+#to_resume a:hover{
+    padding: 15px;
+}
+

@@ -1,0 +1,76 @@
+body{
+	background-color: #FFFCF8;
+	margin: 0;
+    padding: 0;
+    background: url(bilder/pillars_of_creation.jpg) no-repeat top;
+    background-size: cover;
+  
+    
+	}
+
+#main{
+    margin-top: 60px;
+    /*flex:1;*/
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFCF840;
+    position: absolute;
+    
+}
+
+#main h1{
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#main p{
+    margin-top: 10px;
+
+}
+
+#sudoku_app{
+    padding: 20px;
+    background-color: #FFFCF8;
+    display: flex;
+    padding-right: 30px;
+}
+
+#sudoku_app img{
+    margin-left: 15px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+#sudoku_py{
+    padding: 20px;
+    background-color: #D5C1E0;
+    display: flex;
+    padding-right: 30px;
+}
+
+#sudoku_py img{
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+#sudoku_gen{
+    padding: 20px;
+    background-color: #FFFCF8;
+    display: flex;
+    padding-right: 30px;
+
+}
+
+#sudoku_gen img{
+    margin-left: 15px;
+    height: 200px;
+    margin-top: 10px;
+    
+}
