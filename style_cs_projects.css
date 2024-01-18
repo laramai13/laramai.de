@@ -74,3 +74,15 @@ body{
     margin-top: 10px;
     
 }
+
+@media (max-width: 870px) {
+    #sudoku_app{
+        display: block;
+    }
+    #sudoku_py{
+        display: block;
+    }
+    #sudoku_gen{
+        display: block;
+    }
+}

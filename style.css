@@ -26,10 +26,12 @@ body{
     position: relative;
     }
 
+
+
 #menubar a{
 	font-size: 12pt;
 	text-decoration: none;
-    color: #000000;
+    color: #FFFCF8;
     font-family: 'Sometype Mono', sans-serif;
     transition: 250ms;
     position: relative;
@@ -46,17 +48,30 @@ body{
 
 .project_content{
    display: none;
+   
    width: fit-content;
    padding-right: 5px;
    position: absolute;
     /*text-transform: none;*/
     text-transform: uppercase;
     background-color: #FFFCF8;
+    
 
 }
 
+.project_content a {
+    color: black !important;
+}
+
+.project_content a:hover{
+    color: #77689F !important;
+}
+
+
+
 #projects:hover + .project_content{
     display: block;
+    
     position: absolute;
 }
 
@@ -67,9 +82,10 @@ body{
     float: left;
     width: 60px;
     height: 50px;
-    background: url(bilder/logo_schwarz.png) no-repeat center;
+    background: url(bilder/laramai_white.svg) no-repeat center;
     display: block;
     background-size: 60px;
+   
 }
 #logo:hover{
     margin: 4px;

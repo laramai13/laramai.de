@@ -153,10 +153,10 @@ body{
 
 
 #timeline{
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 10px;
     /*width: calc(100vw + 370px);*/
-    width: 1300px;
+    width: calc(100vw + 300px);
 
 }
 
@@ -284,7 +284,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     overflow-x: hidden;
-    width: 1000px; 
+    width: 100wv; 
 }
 
 #skills h1{
