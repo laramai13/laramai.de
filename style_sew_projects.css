@@ -1,0 +1,38 @@
+body{
+	background-color: #FFFCF8;
+	margin: 0;
+    padding: 0;
+    background: url(bilder/pillars_of_creation.jpg) no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    
+	}
+#menubar{
+    background-color: #FFFCF8;
+    background: url(bilder/pillars_of_creation.jpg) no-repeat top;
+    background-size: 100% ;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 60px;
+    position: absolute;
+    
+
+}
+
+.square{
+    background-color: #FFFCF8;
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    
+   
+}
+
+.square img{
+    margin: 10px;
+    height: 330px;
+}

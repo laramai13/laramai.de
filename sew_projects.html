@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Lara Mai Weilemann</title>
+	<link rel="icon" href="bilder/logo_centered.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_sew_projects.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Sometype+Mono&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="bilder/pillars_of_creation.jpg">  
+</head>
+  <header id="menubar">
+	  <a href="index.html" id="logo"></a>
+	<nav>
+	  <ul>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a id="projects" >Projects</a>
+			<div class="project_content">
+				<a href="cs_projects.html">Programming</a>
+				<a href="sew_projects.html">Sewing</a>
+			</div></li>
+		
+	  </ul>
+	</nav>
+	</header>
+    <body>
+        <div id="main">
+        
+                <div class="square">
+                    <img src="bilder/sewing/20221030_140952_040035s.jpg">
+                </div>
+                <div class="square">
+                    <img src="bilder/sewing/PXL_20230314_082151699s.jpg">
+                </div>
+                
+                <div class="square">
+                    <img src="bilder/sewing/2024-01-24 at 11.48.35s.jpeg">
+                </div>
+                <div class="square">
+                    <img src="bilder/sewing/PXL_20221031_152843036.MPs.jpg">
+                </div>
+                <div class="square">
+                    <img src="bilder/sewing/2024-01-24 at 11.54.27s.jpeg">
+                </div>
+
+        </div>
+
+        <script>
+            document.getElementById('projects').addEventListener('mouseover', function() {
+          document.querySelector('.project_content').style.display = 'block';
+        });
+        
+        document.getElementById('projects').addEventListener('mouseout', function() {
+          document.querySelector('.project_content').style.display = 'none';
+        
+        });
+        
+        var projects = document.getElementById('projects');
+        var projectContent = document.querySelector('.project_content');
+        
+        projects.addEventListener('mouseover', function() {
+          projectContent.style.display = 'block';
+        });
+        
+        projects.addEventListener('mouseout', function(event) {
+          if (!projectContent.contains(event.relatedTarget)) {
+            projectContent.style.display = 'none';
+          }
+        });
+        
+        projectContent.addEventListener('mouseover', function() {
+          projectContent.style.display = 'block';
+        });
+        
+        projectContent.addEventListener('mouseout', function(event) {
+          if (!projects.contains(event.relatedTarget)) {
+            projectContent.style.display = 'none';
+          }
+        });
+
+    </script>	
+    </body>
+</html>
