@@ -2,11 +2,15 @@ body{
 	background-color: #FFFCF8;
 	margin: 0;
     padding: 0;
-    background: url(bilder/pillars_of_creation.jpg) no-repeat top;
-    background-size: cover;
-  
+   
     
 	}
+
+    #menubar{
+        background-color: #FFFCF8;
+        background: url(bilder/pillars_of_creation.jpg) no-repeat top;
+        background-size: 100% ;
+    }
 
 #main{
     margin-top: 60px;
@@ -32,6 +36,28 @@ body{
 #main p{
     margin-top: 10px;
 
+}
+
+#kaemmerchen{
+    padding: 20px;
+    background-color: #FFFCF8;
+    display: flex;
+    padding-right: 30px;
+    
+}
+
+#kaemmerchen img{
+    height: 300px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.sc{
+    display: flex;
+}
+
+#ktext{
+    margin-left: 10px;
 }
 
 #sudoku_app{
