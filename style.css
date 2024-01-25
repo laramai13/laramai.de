@@ -55,6 +55,7 @@ body{
     /*text-transform: none;*/
     text-transform: uppercase;
     background-color: #FFFCF8;
+    z-index: 100;
     
 
 }
