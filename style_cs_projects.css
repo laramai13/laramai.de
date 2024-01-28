@@ -118,6 +118,9 @@ body{
     #kaemmerchen{
         display: block;
     }
+    #kaemmerchen img{
+        height: 450px;
+    }
 }
 
 .slideshow-container {
