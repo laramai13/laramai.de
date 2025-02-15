@@ -249,18 +249,16 @@ body{
     margin-left: 40px;
 }
 
-
-
-#edeka #more_info {
+.expand > .more_info {
     display: none;
     
 }
 
-#edeka:hover #original {
+.expand:hover > .original {
     display: none;
 }
 
-#edeka:hover #more_info {
+.expand:hover > .more_info {
     display: block;
     text-align: left;
 }
